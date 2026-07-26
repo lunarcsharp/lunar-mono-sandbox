@@ -1,3 +1,8 @@
+
+
+FULL CREDIT GOES TO MONOSPHERE THE ORIGINAL CREATOR OF MONO SANDBOX
+
+
 MonoSandbox
 
 MonoSandbox is a mod for the virtual reality game Gorilla Tag which introduces a sandbox-based menu inspired by Gary's Mod.
