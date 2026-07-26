@@ -1,0 +1,113 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Assets\sandboxbundle" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Assets\sandboxbundle" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="0Harmony">
+			<HintPath>$(BepInExAssemblyPath)\0Harmony.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(GameAssemblyPath)\Assembly-CSharp.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="BepInEx">
+			<HintPath>$(BepInExAssemblyPath)\BepInEx.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="BepInEx.Harmony">
+			<HintPath>$(BepInExAssemblyPath)\BepInEx.Harmony.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Photon3Unity3D">
+			<HintPath>$(GameAssemblyPath)\Photon3Unity3D.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="PhotonRealtime">
+			<HintPath>$(GameAssemblyPath)\PhotonRealtime.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking">
+			<HintPath>$(GameAssemblyPath)\PhotonUnityNetworking.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking.Utilities">
+			<HintPath>$(GameAssemblyPath)\PhotonUnityNetworking.Utilities.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Unity.InputSystem">
+			<HintPath>$(GameAssemblyPath)\Unity.InputSystem.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Unity.XR.Interaction.Toolkit">
+			<HintPath>$(GameAssemblyPath)\Unity.XR.Interaction.Toolkit.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Unity.XR.Management">
+			<HintPath>$(GameAssemblyPath)\Unity.XR.Management.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Unity.XR.OpenXR">
+			<HintPath>$(GameAssemblyPath)\Unity.XR.OpenXR.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.AssetBundleModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.AudioModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.CoreModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.InputLegacyModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.ParticleSystemModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.PhysicsModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.UI.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.UIModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.XRModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Behaviours\Tools\LimitVelocity.cs">
+			<SubType>Code</SubType>
+		</Compile>
+	</ItemGroup>
+</Project>
